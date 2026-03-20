@@ -36,15 +36,15 @@ public class DecisionTableTesting {
         //R7
         assertEquals(0, bonusCalc.bonus(2, false));
         
-        //R7
-        assertEquals(15000000, bonusCalc.bonus(3, true));
-        
         //R8
-        assertEquals(0, bonusCalc.bonus(3, false));
+        assertEquals(15000000, bonusCalc.bonus(3, true));
         
         //R9
-        assertEquals(15000000, bonusCalc.bonus(3, true));
+        assertEquals(0, bonusCalc.bonus(5, false));
+        
         //R10
+        assertEquals(15000000, bonusCalc.bonus(5, true));
+        //R11
         
         assertEquals(0, bonusCalc.bonus(3, false));
     }
